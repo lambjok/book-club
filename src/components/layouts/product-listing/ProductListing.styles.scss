@@ -1,0 +1,19 @@
+@use '../../../styles/variables.scss' as *;
+
+.product {
+  &__listing {
+    &__container {
+      padding-top: 4%;
+      padding-bottom: 5%;
+      background-color: $bg-color;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+  &__container {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

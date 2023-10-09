@@ -1,0 +1,49 @@
+@use '../../../styles/variables.scss' as *;
+
+.login-form {
+  padding-top: 2rem;
+  width: 40%;
+  &__sign-up {
+    margin-top: 10px;
+    a {
+      text-decoration: none;
+      color: $hover-color;   
+    }
+    font-size: 17px;
+  }
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+  }
+  &__group {
+    padding: 1rem 0;
+  }
+  &__label {
+    display: inline-block;
+    color: white;
+    padding-bottom: 10px;
+  }
+  &__submit {
+    display: inline-block;
+    background-color: $hover-color;
+    width: 20%;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+    }
+    transition: all 0.25s ease-in-out;
+  }
+  
+}

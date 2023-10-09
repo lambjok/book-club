@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss' as *;
+
+.search-result {
+  &__container {
+    padding: 5rem 0;
+    background-color: $bg-color;
+    h2 {
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 3.75rem;
+    }
+  }
+}

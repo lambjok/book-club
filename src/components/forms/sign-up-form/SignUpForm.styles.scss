@@ -1,0 +1,28 @@
+@use '../../../styles/variables.scss' as *;
+
+.sign-up-form {
+  padding-top: 2rem;
+  width: 40%;
+  &__submit {
+    display: inline-block;
+    background-color: $hover-color;
+    width: 20%;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+    }
+    transition: all 0.25s ease-in-out;
+  }
+  &__password-visible-icon {
+    height: 30px;
+  }
+}

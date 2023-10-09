@@ -1,0 +1,73 @@
+@use '../../../styles/variables.scss' as *;
+
+.flex {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.book {
+  &__container {
+    width: 50%;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $hover-color;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+    }
+    transition: all 0.25s ease-in-out;
+    &.in-cart {
+      background-color: green;
+    }
+  }
+
+  &__detail {
+    &__container {
+      width: 50%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        padding: 1rem 0;
+      }
+      h3 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &__description {
+    line-height: 1.7rem;
+  }
+
+  &__img {
+    &__container {
+      margin-left: 10rem;
+      
+      img {
+        height: 650px;
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px;
+        border-bottom: 3px solid black;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.detail-section {
+  &__container {
+    padding: 8rem 0;
+  }
+}

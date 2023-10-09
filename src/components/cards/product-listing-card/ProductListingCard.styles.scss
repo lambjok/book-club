@@ -1,0 +1,64 @@
+@use '../../../styles/variables.scss' as *;
+
+.product {
+  &__card {
+    width: fit-content;
+    background-color: #fefcf9;
+    border: 3px solid black;
+    padding: 0 0 1.5rem 0;
+    border-radius: 14px;
+    box-shadow: 5px 10px 20px rgb(85, 85, 85);
+    &:hover {
+      scale: (110%);
+    }
+    &__price-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    transition: all 0.25s ease-in-out;
+  }
+  &__details__container {
+    border-radius: 10px;
+    width: 300px;
+  }
+  &__image {
+    height: 500px;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+  }
+  &__author {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  &__pricing {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-left: 40px;
+    font-weight: 700;
+    color: $hover-color;
+    margin-top: 1rem;
+    width: 175px;
+  }
+  &__button {
+    display: inline-block;
+    background-color: $hover-color;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+    }
+    transition: all 0.25s ease-in-out;
+    &.in-cart {
+      background-color: green;
+    }
+  }
+}

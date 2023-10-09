@@ -1,0 +1,20 @@
+@use '../../styles/variables.scss' as *;
+
+.search {
+  &__container {
+    width: 40%;
+    margin: auto;
+    margin-top: 4%;
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+  }  
+}
+
+.books-pages {
+  &__background {
+    background-color: $bg-color;
+  }
+}

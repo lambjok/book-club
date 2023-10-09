@@ -1,0 +1,7 @@
+@use '../../styles/variables.scss' as *;
+
+.book-page {
+  &__background {
+    background-color: $bg-color;
+  }
+}

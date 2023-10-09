@@ -1,0 +1,48 @@
+@use '../../../styles/variables.scss' as *;
+
+.navbar {
+  &__container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 1rem 0;
+    &.dark {
+      background-color: rgb(58, 58, 58);
+    }
+    &.relative {
+      position: relative;
+    }
+  }
+  &__logo {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lora';
+    font-weight: 700;
+    z-index: 2;
+    &__club {
+      color: $hover-color;
+    }
+  }
+  &__links {
+    color: white;
+    text-decoration: none;
+    font-size: 1.35rem;
+    padding-left: 20px;
+    cursor: pointer;
+    &:hover {
+      color: $hover-color; 
+      transition: 0.3s;
+    }
+    &__container {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__cart {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  } 
+}

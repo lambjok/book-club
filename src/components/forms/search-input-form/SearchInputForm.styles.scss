@@ -1,0 +1,29 @@
+@use '../../../styles/variables.scss' as *;
+
+.search__input {
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  &__container {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 5px;
+    &:focus-within {
+      box-shadow: 2px 2px 10px black;
+    }
+    transition: all 0.25s ease-in-out;    
+  }
+  &__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    &__icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

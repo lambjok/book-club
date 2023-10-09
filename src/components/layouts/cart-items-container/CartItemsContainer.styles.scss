@@ -1,0 +1,23 @@
+@use '../../../styles/variables.scss' as *;
+
+.cart {
+  &__items {
+    &__container {
+      padding: 5% 0 0 0;
+      background-color: $bg-color;
+      h2 {
+        font-size: 2rem;
+      }
+      
+    } 
+  }
+  &__empty {
+    &__container {
+      margin-bottom: 5%;
+      p {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+      }
+    }    
+  } 
+}

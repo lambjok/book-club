@@ -1,0 +1,28 @@
+@use '../../../styles/mixins.scss' as *;
+
+.product-listing-all {
+  &__container {
+    padding: 5rem 0;
+    margin-top: 1rem;
+  }
+}
+
+.grid {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+}
